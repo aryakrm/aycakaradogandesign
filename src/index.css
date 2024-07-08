@@ -8,6 +8,7 @@ body {
   width: 100vw;
   background-color: #111111;
   color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -22,4 +23,8 @@ a:hover {
 
 a:visited {
   color: inherit;
+}
+
+ul {
+  list-style: none;
 }

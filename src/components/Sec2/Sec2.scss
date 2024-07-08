@@ -1,9 +1,10 @@
 .Sec2 {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  margin-top: 1rem;
   .Sec2-Left {
     width: 40%;
     img {
@@ -34,15 +35,15 @@
       p {
         color: white;
         span {
-          color: #f5dbd7;
+          color: #ecc2bc;
         }
       }
     }
     a {
       h1 {
         font-size: 1rem;
-        color: #f5dbd7;
-        border: 1px solid #f5dbd7;
+        color: #ecc2bc;
+        border: 1px solid #ecc2bc;
         padding: 1rem 1.5rem;
         border-radius: 5px;
       }
@@ -50,10 +51,32 @@
         h1 {
           font-size: 1rem;
           color: black;
-          border: 1px solid #f5dbd7;
-          background-color: #f5dbd7;
+          border: 1px solid #ecc2bc;
+          background-color: #ecc2bc;
           border-radius: 5px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Sec2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .Sec2-Left {
+      width: 100%;
+    }
+    .Sec2-Right {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      div {
+        flex-direction: column;
       }
     }
   }
