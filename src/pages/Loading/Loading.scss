@@ -1,0 +1,63 @@
+.Loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 2rem;
+    $animation-delay: 0.5s; // Adjust the delay between each letter
+
+    .a,
+    .d,
+    .k {
+      width: 20%;
+      opacity: 0;
+      animation: draw 1s forwards;
+    }
+
+    .a {
+      animation-delay: $animation-delay * 1;
+      margin-right: -16%;
+    }
+
+    .d {
+      animation-delay: $animation-delay * 2;
+    }
+
+    .k {
+      animation-delay: $animation-delay * 3;
+      margin-left: -16%;
+    }
+  }
+}
+
+@keyframes draw {
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Loading {
+    .logo-container {
+      .a,
+      .d,
+      .k {
+        width: 40%;
+      }
+      .a {
+        margin-right: -32%;
+      }
+
+      .k {
+        margin-left: -32%;
+      }
+    }
+  }
+}
