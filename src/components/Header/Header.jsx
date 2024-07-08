@@ -39,22 +39,22 @@ function Header() {
             <IoMdClose />
           </div>
           <ul>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to={"/"}>
                 <h1>Home</h1>
               </Link>
             </li>
-            <li>
-              <Link to={"/"}>
+            <li onClick={handleHamburger}>
+              <Link to={"/designs"}>
                 <h1>Our Desings</h1>
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to={"/"}>
                 <h1>About Us</h1>
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to={"/"}>
                 <h1>Contact</h1>
               </Link>

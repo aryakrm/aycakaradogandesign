@@ -5,13 +5,13 @@
   align-items: center;
   width: 100vw;
   margin-top: 2rem;
+  gap: 2rem;
   div {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 1rem;
-
     img {
       width: 30%;
       &:last-of-type {
